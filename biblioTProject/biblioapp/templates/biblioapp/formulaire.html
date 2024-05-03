@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="%static 'biblioapp/index.css'%"/>
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="/biblioapp/bonjour" method="get">
+        {% csrf_token %}
+        <label for="nom"> Nom :</label>
+        <input type="text" name="nom"/>
+    </form>
+    <form action="/biblioapp/bonjour" method="get">
+        {% csrf_token %}
+        <label for="prenom">  Prenom  :</label>
+        <input type="text" prenom="prenom"/>
+        <input type="submit" value="envoyer"/>
+    </form>
+</body>
+</html>
